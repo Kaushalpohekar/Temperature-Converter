@@ -1,0 +1,85 @@
+<!DOCTYPE html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Tempreature-Converter</title>
+      <!-- bootstrap CDN -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <!-- font awesome -->
+      <script src="js/font.js"></script>
+      <!-- ---------------Custom CSS-------------------------------------- -->
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body class="body">
+      <h1>Tempreature Converter</h1>
+      <hr>
+      <div class="d-flex align-items-center">
+         <div class="container">
+            <div class="row">
+               <div class="card-group col-12 col-md-10 offset-md-1 my-md-auto">
+                  <div class="card inputSection col-12 col-md-6">
+                     <div class="card-body">
+                        <form>
+                           <div class="row px-3">
+                              <div class="col-12 col-md-11 px-4">
+                                 <span class="card-title d-block">Enter Temperature</span>
+                                 <label for="degreeInput" class="py-sm-2">Degree</label>
+                                 <div class="input-group">
+                                    <input type="number" class="form-control" id="inputDegree" name="inputDegree" placeholder="Enter Degree" value="0" />
+                                    <div class="input-group-append">
+                                       <select class="form-control" id="selectInputDegreeType">
+                                          <option value="C" selected>&deg;C</option>
+                                          <option value="F">&deg;F</option>
+                                          <option value="K">K</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                                 <label for="selectConversionType" class="py-sm-2">Convert In</label>
+                                 <div class="input-group d-inline-block">
+                                    <div class="input-group-append">
+                                       <select class="form-control" id="selectConversionType">
+                                          <option value="F" selected> Fahrenheit (&deg;F) </option>
+                                          <option value="C">Celcius (&deg;C)</option>
+                                          <option value="K">Kelvin (K)</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="card resultSection col-12 col-md-6">
+                     <div class="card-body d-flex justify-content-center align-items-center">
+                        <div id="resultValueSection">
+                           <div id="convertedDegree">32</div>
+                           <h3 id="degree">&deg;</h3>
+                           <h3 id="convertedUnit">F</h3>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer id="footer">
+         <div class="footer">
+            <!-- social media icons -->
+            <hr>
+            <div class="social-icons mt-4">
+               <a href="https://www.facebook.com/ketan.pohekar.5" target="_blank">
+                  <i class="fab fa-facebook"></i>
+               </a>
+               <a href="https://www.instagram.com/mr_k_a_u_s_h_a_l/" target="_blank"><i class="fab fa-instagram"></i></a>
+               <a href="https://github.com/Kaushalpohekar" target="_blank"><i class="fab fa-github"></i></a>
+               <a href="https://www.linkedin.com/in/kaushal-pohekar" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+         </div>
+      </footer>
+      <!-- ---------------jQery-------------------------------------->
+      <script src="js/jquery-3.6.0.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <!-- ---------------Custom JS-------------------------------------- --><script src="js/script.js"></script>
+   </body>
+</html>
